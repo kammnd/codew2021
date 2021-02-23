@@ -13,7 +13,7 @@ import {
     ArrowRight,
 } from './HeroElements';
 
-import { LocaleContext } from '../../context/LocaleContext';
+import TranslatableText from '../../context/TranslatableText';
 
     const HeroSection = () => {
     const [hover, setHover] = useState(false)
@@ -28,15 +28,12 @@ import { LocaleContext } from '../../context/LocaleContext';
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    <LocaleContext.Consumer>
-                        {localeVal => localeVal.locale === 'en' ? <h1>Welcome!</h1> : <h1>Привет!</h1>}
-                    </LocaleContext.Consumer>
+                    <TranslatableText
+                        dictionary={{ english: "Welcome!", russian: "Привет!", kazakh: "Сәлем!" }}
+                    />
                 </HeroH1>
                 
-                <LocaleContext.Consumer>
-                        {localeVal => localeVal.locale === 'en' ?<HeroP>Do not miss an opportunity to participate in the Programming contest for girls.</HeroP>
-                        : <HeroP>Не упусти возможность участвовать в нашем марафоне!</HeroP>}
-                </LocaleContext.Consumer>
+                <HeroP>Do not miss an opportunity to participate in the Programming contest for girls.</HeroP>
                 <HeroBtnWrapper>
                     <Button type="button" onClick={(e) => { e.preventDefault(); 
                     window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSf7-DIfW8sBtZiEogRiQ0VrzMVe4668JtHC6u1VM49nuR_peg/viewform?usp=sf_link";}}

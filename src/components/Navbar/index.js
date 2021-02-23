@@ -14,7 +14,8 @@ import {
     NavIcon
 } from './NavbarElements';
 
-import {LocaleContext} from '../../context/LocaleContext';
+import LanguageConsumer from '../../context/LanguageConsumer';
+import TranslatableText from '../../context/TranslatableText';
 import { animateScroll } from 'react-scroll';
 
 const Navbar = ({ toggle } ) => {
@@ -47,36 +48,65 @@ const Navbar = ({ toggle } ) => {
                     <NavItem>
                         <NavLinks to="about" smooth={true} duration={400}
                             spy={true} exact='true' offset={-80}
-                        >About</NavLinks>
+                        >
+                            <TranslatableText
+                                dictionary={{ english: "About", russian: "О нас", kazakh: "Turaly" }}
+                            />
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="registration" smooth={true} duration={400}
+                            spy={true} exact='true' offset={-80}
+                        >
+                        <TranslatableText
+                                dictionary={{ english: "Registration", russian: "Регистрация", kazakh: "Tırkeu" }}
+                            />
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="schedule" smooth={true} duration={400}
                             spy={true} exact='true' offset={-80}>
-                            Schedule</NavLinks>
+                            <TranslatableText
+                                dictionary={{ english: "Schedule", russian: "Расписание", kazakh: "Keste" }}
+                            />
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="sponsors" smooth={true} duration={400}
                             spy={true} exact='true' offset={-80}>
-                            Sponsors</NavLinks>
+                            <TranslatableText
+                                dictionary={{ english: "Sponsors", russian: "Спонсоры", kazakh: "Demeuşıler" }}
+                            />
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="faq" smooth={true} duration={400}
                             spy={true} exact='true' offset={-80}>
-                            FAQ</NavLinks>
+                            <TranslatableText
+                                dictionary={{ english: "FAQ", russian: "Частые вопросы", kazakh: "Jiı Sūraqtar" }}
+                            />
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="ourteam" smooth={true} duration={400}
                             spy={true} exact='true' offset={-80}>
-                            Our Team</NavLinks>
+                            <TranslatableText
+                                dictionary={{ english: "Our Team", russian: "Наша Команда", kazakh: "Bızdıŋ Komanda" }}
+                            />
+                        </NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <LocaleContext.Consumer>
-                        {localeVal => (
-                            <NavIcon onClick={localeVal.changeLocale}> <FaGlobeAfrica /></NavIcon>
+                    <LanguageConsumer>
+                        {({ updateLanguage }) => (
+                                <select onChange={updateLanguage}>
+                                    <option value="english">EN</option>
+                                    <option value="russian">RU</option>
+                                    <option value="kazakh">KZ</option>
+                                </select>
                         )}
-                    </LocaleContext.Consumer>
-                    {/* <NavBtnLink to={{ pathname: "https://docs.google.com/forms/d/e/1FAIpQLSf7-DIfW8sBtZiEogRiQ0VrzMVe4668JtHC6u1VM49nuR_peg/viewform?usp=sf_link" }} target="_blank"  >Register</NavBtnLink> */}
+                        {/* <NavIcon onClick={localeVal.changeLocale}> <FaGlobeAfrica /></NavIcon> */}
+                    </LanguageConsumer>
                     <NavBtnLink onClick={(e) => { e.preventDefault(); 
                     window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSf7-DIfW8sBtZiEogRiQ0VrzMVe4668JtHC6u1VM49nuR_peg/viewform?usp=sf_link";}}>Register</NavBtnLink>
                 </NavBtn>
