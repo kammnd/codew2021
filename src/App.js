@@ -4,14 +4,16 @@ import {BrowserRouter as Router} from 'react-router-dom';
 
 import Home from "./pages";
 
-import LocaleProvider from './context/LocaleContext';
+
+import LanguageProvider from './context/LanguageProvider';
+
 function App() {
   return (
-    <LocaleProvider>
+    <LanguageProvider>
     <Router>
       <Home />
     </Router>
-    </LocaleProvider>
+    </LanguageProvider>
   );
 }
 

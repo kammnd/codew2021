@@ -23,14 +23,14 @@ const Footer= () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="/" onClick={toggleHome}>
-                            codeW
+                            code<span style={{color: "#FF6F60", fontFamily: 'Raleway'}}>W</span>
                         </SocialLogo>
-                        <WebsiteRights>Source Code & Credits</WebsiteRights>
+                        <WebsiteRights href="https://github.com/kammnd/codew2021" target="_blank">Source Code & Credits</WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href="/" target="_blank" aria-label="Telegram">
+                            <SocialIconLink href="https://t.me/nu_acm_w" target="_blank" aria-label="Telegram">
                                 <FaTelegram/>
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                            <SocialIconLink href="https://www.instagram.com/acmsc_nu/?hl=en" target="_blank" aria-label="Instagram">
                                 <FaInstagram/>
                             </SocialIconLink>
                             <SocialIconLink href="/" target="_blank" aria-label="Email">

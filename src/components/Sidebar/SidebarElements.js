@@ -88,3 +88,19 @@ export const SidebarRoute = styled(LinkR)`
         color: #010606;
     }
 `;
+
+export const Select = styled.select`
+    position: fixed;
+    width: 65px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #eee;
+    height: 34px;
+    background-color: transparent;
+    border-radius: 8px;
+    top: 1.2rem;
+    left: 1.5rem;
+    color: #fff;
+    outline: none;
+    cursor:pointer;
+`;

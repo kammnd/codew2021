@@ -3,8 +3,12 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../components/InfoSection/Data';
+import RegistrationSection from '../components/RegistrationSection';
 import Footer from '../components/Footer';
+import ScheduleSection from '../components/ScheduleSection';
+import FaqSection from '../components/FaqSection';
+import TeamSection from '../components/TeamSection';
+import SponsorsSection from '../components/SponsorsSection';
 
 
 const Home = () => {
@@ -19,10 +23,12 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
             <HeroSection />
-            <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjTwo}/>
-            <InfoSection {...homeObjThree}/>
-            <InfoSection {...homeObjFour}/>
+            <InfoSection/>
+            <RegistrationSection />
+            <ScheduleSection />
+            <SponsorsSection />
+            <FaqSection />
+            <TeamSection />
             <Footer />
         </div>
     );

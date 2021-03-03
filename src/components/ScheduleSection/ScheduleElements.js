@@ -69,25 +69,12 @@ export const Heading = styled.h1`
     font-weight: 600;
     color: ${({ lightText }) => ( lightText ? '#f7f8f8' : '#010606')};
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
 
     @media screen and (max-width: 480px) {
         font-size: 22px;
     }
-`;
 
-export const Subtitle = styled.p`
-    max-width: 440px;
-    margin-top: 30px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
 `;
 
 export const ImgWrap = styled.div`
@@ -96,13 +83,18 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 70%;
+    width: 60%;
     margin: 0 0 10px 0;
+    padding-right: 0;
+`;
+
+export const RowWrapper = styled.div`
+    margin-top: 30px;
 `;
 
 export const List = styled.p`
     max-width: 440px;
-    margin-top: 10px;
+    margin-top: 3px;
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
@@ -111,3 +103,4 @@ export const List = styled.p`
         font-size: 16px;
     }
 `;
+

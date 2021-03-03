@@ -13,7 +13,7 @@ import {
     ArrowRight,
 } from './HeroElements';
 
-import { LocaleContext } from '../../context/LocaleContext';
+import TranslatableText from '../../context/TranslatableText';
 
     const HeroSection = () => {
     const [hover, setHover] = useState(false)
@@ -28,20 +28,31 @@ import { LocaleContext } from '../../context/LocaleContext';
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    <LocaleContext.Consumer>
-                        {localeVal => localeVal.locale === 'en' ? <h1>Welcome!</h1> : <h1>Привет!</h1>}
-                    </LocaleContext.Consumer>
+                    <TranslatableText
+                        dictionary={{ english: "codeW 2021", russian: "codeW 2021", kazakh: "codeW 2021" }}
+                    />
                 </HeroH1>
                 
-                <LocaleContext.Consumer>
-                        {localeVal => localeVal.locale === 'en' ?<HeroP>Do not miss an opportunity to participate in the Programming contest for girls.</HeroP>
-                        : <HeroP>Не упусти возможность участвовать в нашем марафоне!</HeroP>}
-                </LocaleContext.Consumer>
+                <HeroP>
+                <TranslatableText
+                        dictionary={{ english: "Annual Coding Marathon for Females", russian: "Ежегодное Соревнование по Программированию среди Девушек", kazakh: "Жыл Сайын Өтетін Қыздарға Арналған Бағдарламалау Марафоны" }}
+                    />
+                </HeroP>
                 <HeroBtnWrapper>
-                    <Button type="button" onClick={(e) => { e.preventDefault(); 
-                    window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSf7-DIfW8sBtZiEogRiQ0VrzMVe4668JtHC6u1VM49nuR_peg/viewform?usp=sf_link";}}
-                    onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                        I'm in!{hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                    <Button type="button" to='registration' 
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact="true" 
+                    //offset={-80}
+                    onMouseEnter={onHover} 
+                    onMouseLeave={onHover} 
+                    primary='true' 
+                    dark='true'>
+                        <TranslatableText
+                        dictionary={{ english: "I'm in!", russian: "Хочу участвовать!", kazakh: "Қатысамын!" }}
+                        />
+                    {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

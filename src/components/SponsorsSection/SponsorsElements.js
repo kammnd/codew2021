@@ -18,19 +18,18 @@ export const InfoWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: stretch;
+    justify-content: center;
 `;
 
 export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1rf);
     align-items: center;
-    justify-items: stretch;
+    justify-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
 
     @media screen and (max-width: 768px) {
         grid-template-areas:  ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-        //justify-items: center;
     }
 `;
 
@@ -42,7 +41,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 25px;
+    padding: 180px 15px 0;
     grid-area: col2;
 `;
 
@@ -71,8 +70,9 @@ export const Heading = styled.h1`
     font-family: 'Raleway', sans-serif;
 
     @media screen and (max-width: 480px) {
-        font-size: 22px;
+        font-size: 32px;
     }
+
 `;
 
 export const Subtitle = styled.p`
@@ -82,12 +82,6 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
 `;
 
 export const ImgWrap = styled.div`
@@ -95,19 +89,35 @@ export const ImgWrap = styled.div`
     height: 100%;
 `;
 
-export const Img = styled.img`
-    width: 70%;
+export const ImgMicro = styled.img`
+    width: 100%;
     margin: 0 0 10px 0;
+    padding-right: 0;
 `;
 
-export const List = styled.p`
-    max-width: 440px;
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-    }
+export const ImgPalantir = styled.img`
+    width: 90%;
+    margin: 50px 0 10px 0;
+    padding-right: 0;
+`;
+
+export const ImgEpam = styled.img`
+    width: 85%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+`;
+
+export const ImgChoco = styled.img`
+    width: 90%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+`;
+
+export const ImgBirdWrap = styled.div`
+    position: absolute;
+    margin: 300px 25px 10px 0;
+`;
+
+export const ImgBird = styled.img`
+    width: 70%;
 `;
