@@ -16,7 +16,7 @@
 ## Installation
 1. Clone the project
 ```bash
-git clone //
+git clone https://github.com/kammnd/codew2021.git
 ```
 2. Install dependecies
 ```bash
