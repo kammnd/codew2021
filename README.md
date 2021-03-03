@@ -1,10 +1,10 @@
-# codeW 2021
+<h1 align="center"> codeW 2021 </h1>
 <div align="center">
   <img alt="Logo" src="./src/images/codeW-bird.png" width="300" />
 </div>
-Annual Coding Marathon for Females. Nazarabayev University ACM Women Student Chapter.
+<p align="center"> Annual Coding Marathon for Females. Nazarabayev University ACM Women Student Chapter.</p>
 
-This repository is a source of React website created with styled-components and React smooth scroll.
+<p align="center">This repository is a source of React website created with styled-components and React smooth scroll.</p>
 
 ## Installation
 1. Clone the project
