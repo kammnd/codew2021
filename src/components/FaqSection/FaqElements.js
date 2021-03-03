@@ -30,26 +30,47 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-areas:  ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-        //justify-items: center;
     }
 `;
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 25px;
+    padding: 0 15px 0 25px;
     grid-area: col1;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0px;
+    }
 `;
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 25px;
+    padding: 34px 25px 0;
     grid-area: col2;
+
+    @media screen and (max-width: 768px) {
+       margin-top: 0;
+       padding: 0 15px 0 25px;
+    }
 `;
 
-export const TextWrapper = styled.div`
+export const TextWrapper1 = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 0;
+    }
+`;
+
+export const TextWrapper2 = styled.div`
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 0;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
 `;
 
 export const TopLine = styled.p`
@@ -64,50 +85,39 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-top: 24px;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.1;
     font-weight: 600;
     color: ${({ lightText }) => ( lightText ? '#f7f8f8' : '#010606')};
     font-family: 'Raleway', sans-serif;
 
-    @media screen and (max-width: 480px) {
-        font-size: 22px;
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
     }
+
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    }
+
 `;
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+
+    @media screen and (max-width: 960px) {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 12px;
     }
-`;
 
-export const ImgWrap = styled.div`
-    max-width: 555px;
-    height: 100%;
-`;
-
-export const Img = styled.img`
-    width: 70%;
-    margin: 0 0 10px 0;
-`;
-
-export const List = styled.p`
-    max-width: 440px;
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
+    @media screen and (max-width: 500px) {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 8px;
     }
 `;

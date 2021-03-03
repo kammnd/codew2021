@@ -36,16 +36,18 @@ export const SocialLogo = styled(Link)`
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 `;
 
-export const WebsiteRights = styled.small`
+export const WebsiteRights = styled.a`
     color: #fff;
     margin-bottom: 16px;
+    text-decoration: none;
 `
 
 export const SocialIcons = styled.div`

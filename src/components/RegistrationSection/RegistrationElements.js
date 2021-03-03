@@ -44,12 +44,18 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 25px;
     grid-area: col2;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 `;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 0;
+    }
 `;
 
 export const TopLine = styled.p`
@@ -71,8 +77,9 @@ export const Heading = styled.h1`
     font-family: 'Raleway', sans-serif;
 
     @media screen and (max-width: 480px) {
-        font-size: 22px;
+        font-size: 20px;
     }
+
 `;
 
 export const Subtitle = styled.p`
@@ -82,12 +89,17 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
+
     @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
+`;
+
+export const BtnWrap = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 export const ImgWrap = styled.div`
@@ -96,8 +108,12 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 70%;
+    width: 72%;
     margin: 0 0 10px 0;
+    padding-right: 0;
+    @media screen and (max-width: 768px) {
+        width: 50%;
+    }
 `;
 
 export const List = styled.p`
@@ -106,8 +122,8 @@ export const List = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
-    
     @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 14px;
+        margin-top: 5px;
     }
 `;
