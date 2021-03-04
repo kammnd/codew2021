@@ -133,14 +133,18 @@ export const NavBtnLink = styled(LinkR)`
 `;
 
 export const Select = styled.select`
+    display: flex;
     width: 65px;
+    align-items: center;
     padding: 5px 5px 5px 5px;
     font-size: 16px;
     border: 1px solid #eee;
     height: 34px;
     background-color: transparent;
     border-radius: 8px;
-    margin: 23px 13px 0 7px;
+    margin-top: 23px;
+    margin-right: 15px;
+    margin-left: 15px;
     color: #fff;
     outline: none;
     cursor:pointer;

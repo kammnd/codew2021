@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '../ButtonElements'
 import { 
     InfoContainer,
     InfoWrapper,
@@ -10,7 +9,6 @@ import {
     TopLine,
     Heading,
     Subtitle,
-    BtnWrap, 
     ImgWrap,
     Img,
     Logo, 
@@ -34,7 +32,7 @@ const TeamSection = () => {
                                     <Col1>
                                         <TopLine>
                                             <TranslatableText
-                                                dictionary={{ english: "Our Team", russian: "Наша Команда", kazakh: "Бiз туралы"}}
+                                                dictionary={{ english: "Our Team", russian: "О Нас", kazakh: "Бiз туралы"}}
                                             />
                                         </TopLine>
                                         <Heading lightText={false}>
@@ -56,6 +54,23 @@ const TeamSection = () => {
                                             russian: "NU ACM-W SC - это первая Казахстанская ветвь самой большой интернациональной организации, которая нацелена на оказание социальной и профессиональной поддержки женщинам в области компьютерных технологий, информатики и инженерии, а также содействие их техническому росту путем организации различных видов деятельности.", 
                                             kazakh: "NU ACM-W SC - бұл алғашқы Қазақстандық бұтағы ең үлкен интернационалдық ұйым, компьютерлік технологиялар, информатика және инженерия саласында әйелдерге әлеуметтік және кәсіби қолдау көрсетуге, сондай-ақ, әртүрлі қызмет түрлерін ұйымдастыру жолымен олардың техникалық дамуына жәрдемдесуге бағытталған."}}
                                     /> 
+                                </Subtitle>
+                                <Subtitle darkText={true}>
+                                    <TranslatableText
+                                            dictionary={{ 
+                                                english: "We would also like to thank ", 
+                                                russian: "Выражаем благодарность талантливой ", 
+                                                kazakh: "Оған қоса, біз деңгейді анықтайтын тесттің есептерін құрастыруда үлкен үлесін қосқан MIT университетінің түлегі және Google компаниясының инженері "
+                                            }}
+                                    />
+                                    <span style={{color: "#FF6F60", fontFamily: 'Raleway', fontSize: '20px'}}>Madeline Zhang</span>
+                                    <TranslatableText
+                                            dictionary={{ 
+                                                english: ", MIT graduate and Software Engineer from Google, for her enormous help with creating the qualification round test!", 
+                                                russian: ", выпускнице MIT, а также разработчице из Google, которая помогала нам составлять контест на уровень!", 
+                                                kazakh: "-қа үлкен алғысымызды білдіреміз."
+                                            }}
+                                    />
                                 </Subtitle>
                             </TextWrapper>
                         </Column1>

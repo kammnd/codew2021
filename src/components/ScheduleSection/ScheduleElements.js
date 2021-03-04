@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #ff5349;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -83,24 +83,28 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 60%;
+    width: 75%;
     margin: 0 0 10px 0;
-    padding-right: 0;
+    padding-left: 80px;
+    @media screen and (max-width: 768px) {
+        padding-left: 50px;
+        width: 65%;
+    }
 `;
 
 export const RowWrapper = styled.div`
-    margin-top: 30px;
+    margin-top: 50px;
 `;
 
 export const List = styled.p`
     max-width: 440px;
-    margin-top: 3px;
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 20px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
+    color: ${({darkText}) => (darkText ?  '#010606' : '#f9f9f9')};
     
     @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 18px;
     }
 `;
 

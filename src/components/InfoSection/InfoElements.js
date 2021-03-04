@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #ff5349;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -79,9 +79,9 @@ export const Subtitle = styled.p`
     max-width: 440px;
     margin-top: 30px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
+    color: ${({darkText}) => (darkText ?  '#010606' : '#f9f9f9')};
     
     @media screen and (max-width: 768px) {
         font-size: 16px;
@@ -96,8 +96,13 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 70%;
+    width: 90%;
     margin: 0 0 10px 0;
+    padding-left: 60px;
+    @media screen and (max-width: 768px) {
+        padding-left: 40px;
+        width: 80%;
+    }
 `;
 
 export const List = styled.p`
@@ -105,7 +110,7 @@ export const List = styled.p`
     margin-top: 10px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
+    color: ${({darkText}) => (darkText ?  '#010606' : '#f9f9f9')};
     
     @media screen and (max-width: 768px) {
         font-size: 16px;

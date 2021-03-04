@@ -7,6 +7,10 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
+
+    @media screen and (max-width: 540px) {
+        padding-bottom: 200px;
+    }
 `;
 
 export const InfoWrapper = styled.div`
@@ -60,7 +64,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #ff5349;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -77,7 +81,7 @@ export const Heading = styled.h1`
     font-family: 'Raleway', sans-serif;
 
     @media screen and (max-width: 480px) {
-        font-size: 20px;
+        font-size: 19px;
     }
 
 `;
@@ -95,6 +99,7 @@ export const Subtitle = styled.p`
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    
 `;
 
 export const BtnWrap = styled.div`

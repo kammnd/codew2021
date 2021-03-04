@@ -7,9 +7,11 @@ import {
     Column2,
     TextWrapper,
     TopLine,
-    Heading, 
-    ImgBirdWrap,
-    ImgWrap,
+    Heading,
+    ImgWrap1,
+    ImgWrap2,
+    ImgWrap3,
+    ImgWrap4,
     ImgMicro,
     ImgChoco,
     ImgPalantir,
@@ -37,25 +39,23 @@ const SponsorsSection = () => {
                                     />
                                 </Heading>
                             </TextWrapper>
-                            <ImgWrap>
-                                <ImgMicro src={require('../../images/microsoft.png').default} alt={'Microsoft Logo'}/>
-                            </ImgWrap>
-                            <ImgWrap>
-                                <ImgPalantir src={require('../../images/palantir.jpg').default} alt={'Palantir Logo'}/>
-                            </ImgWrap>
+                            <ImgWrap1>
+                                <ImgMicro src={require('../../images/microsoft.png').default} alt={'Microsoft Logo'} />
+                            </ImgWrap1>
+                            <ImgWrap2>
+                                <ImgEpam src={require('../../images/epam.png').default} alt={'Epam Logo'} />
+                            </ImgWrap2> 
                         </Column1>
                         <Column2>
-                            <ImgWrap>
-                                <ImgEpam src={require('../../images/epam.png').default} alt={'Epam Logo'}/>
-                            </ImgWrap>
-                            <ImgWrap>
+                        <ImgBird src={require('../../images/bird_sboku.png').default} alt={'Wowan sboku'}/>
+                        <ImgWrap3>
+                                <ImgPalantir src={require('../../images/palantir_logo.png').default} alt={'Palantir Logo'}/>
+                            </ImgWrap3>
+                            <ImgWrap4>
                                 <ImgChoco src={require('../../images/choco.png').default} alt={'Chocofamily Logo'}/>
-                            </ImgWrap>
+                            </ImgWrap4>
                         </Column2>
                     </InfoRow>
-                    <ImgBirdWrap>
-                        <ImgBird src={require('../../images/bird_sboku.png').default} alt={'Wowan sboku'}/>
-                    </ImgBirdWrap>
                 </InfoWrapper>
             </InfoContainer>
            

@@ -33,10 +33,10 @@ const Sidebar = ({isOpen, toggle}) => {
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>
                         <TranslatableText
-                                dictionary={{ english: "About", russian: "О нас", kazakh: "Марафон туралы" }}
+                                dictionary={{ english: "About", russian: "Описание", kazakh: "Марафон туралы" }}
                         />
                     </SidebarLink>
-                    <SidebarLink to="about" onClick={toggle}>
+                    <SidebarLink to="registration" onClick={toggle}>
                         <TranslatableText
                                 dictionary={{ english: "Registration", russian: "Регистрация", kazakh: "Тіркелу" }}
                             />
@@ -53,17 +53,21 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink>
                     <SidebarLink to="faq" onClick={toggle}>
                         <TranslatableText
-                                dictionary={{ english: "FAQ", russian: "Частые вопросы", kazakh: "Сұрақ-Жауап" }}
+                                dictionary={{ english: "FAQ", russian: "Вопросы-Ответы", kazakh: "Сұрақ-Жауап" }}
                             />
                     </SidebarLink>
                     <SidebarLink to="ourteam" onClick={toggle}>
                         <TranslatableText
-                                dictionary={{ english: "Our Team", russian: "Наша Команда", kazakh: "Біздің Топ" }}
+                                dictionary={{ english: "Our Team", russian: "О Нас", kazakh: "Бiз туралы" }}
                         />
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to={{ pathname: "https://docs.google.com/forms/d/e/1FAIpQLSf7-DIfW8sBtZiEogRiQ0VrzMVe4668JtHC6u1VM49nuR_peg/viewform?usp=sf_link" }} target="_blank" >Register</SidebarRoute>
+                    <SidebarRoute to={{ pathname: "https://docs.google.com/forms/d/e/1FAIpQLScz0OGyTUsl4jcnd23tT6BrMBlNQchdbF5_4RjYJWP6o-Dddw/viewform" }} target="_blank" >
+                        <TranslatableText
+                                dictionary={{ english: "Register", russian: "Регистрируйся", kazakh: "Тiркелу" }}
+                        />
+                        </SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
