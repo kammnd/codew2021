@@ -35,15 +35,15 @@ const SponsorsSection = () => {
                                 </TopLine>
                                 <Heading lightText={false}>
                                     <TranslatableText
-                                        dictionary={{ english: "Meet our Sponsors", russian: "В этом году нашими спонсорами являются", kazakh: "Біздің демеушілер" }}
+                                        dictionary={{ english: "Meet our Sponsors", russian: "Нашими спонсорами являются", kazakh: "Біздің демеушілер" }}
                                     />
                                 </Heading>
                             </TextWrapper>
                             <ImgWrap1>
-                                <ImgMicro src={require('../../images/microsoft.png').default} alt={'Microsoft Logo'} />
+                                <ImgMicro src={require('../../images/microsoft_logo.png').default} alt={'Microsoft Logo'} />
                             </ImgWrap1>
                             <ImgWrap2>
-                                <ImgEpam src={require('../../images/epam.png').default} alt={'Epam Logo'} />
+                                <ImgEpam src={require('../../images/epam_logo.png').default} alt={'Epam Logo'} />
                             </ImgWrap2> 
                         </Column1>
                         <Column2>
@@ -52,7 +52,7 @@ const SponsorsSection = () => {
                                 <ImgPalantir src={require('../../images/palantir_logo.png').default} alt={'Palantir Logo'}/>
                             </ImgWrap3>
                             <ImgWrap4>
-                                <ImgChoco src={require('../../images/choco.png').default} alt={'Chocofamily Logo'}/>
+                                <ImgChoco src={require('../../images/choco_logo.png').default} alt={'Chocofamily Logo'}/>
                             </ImgWrap4>
                         </Column2>
                     </InfoRow>

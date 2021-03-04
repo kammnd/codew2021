@@ -101,7 +101,7 @@ const FaqSection = () => {
                                 </Subtitle>
                                 <Heading lightText={true}>
                                     <TranslatableText
-                                        dictionary={{ english: "How do I know which track is suitable for me ?", russian: "Как узнать, какой уровень мне подходит?", kazakh: "Менің деңгейім қандай бағытқа сәйкес келетінін қалай білемін?"}}
+                                        dictionary={{ english: "How do I know which track is suitable for me?", russian: "Как узнать, какой уровень мне подходит?", kazakh: "Менің деңгейім қандай бағытқа сәйкес келетінін қалай білемін?"}}
                                     />
                                 </Heading>
                                 <Subtitle darkText={false}>

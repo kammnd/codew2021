@@ -43,7 +43,7 @@ const InfoSection = () => {
                                 <TranslatableText
                                         dictionary={{ 
                                             english: "The first and the only 3 hour coding contest for females in Kazakhstan, which is held in English, Russian and Kazakh!", 
-                                            russian: "Первый и единственный трехчасовой марафон по программированию для женщин в Казахстане, который проводится на английском, русском и казахском языках!", 
+                                            russian: "Первый и единственный трехчасовой марафон по программированию для девушек в Казахстане, который проводится на английском, русском и казахском языках!", 
                                             kazakh: "Қазақстанда ағылшын, орыс және қазақ тілінде өткізілетін қыздарға арналған бірінші 3 сағаттық бағдарламалау жарысы!" 
                                         }}
                                 />
@@ -52,7 +52,7 @@ const InfoSection = () => {
                                     <TranslatableText
                                             dictionary={{ 
                                                 english: "Last year's statistics: ", 
-                                                russian: "В прошло году мы получили: ", 
+                                                russian: "В прошлом году мы получили: ", 
                                                 kazakh: "Алдыңғы жылдың нәтижелері: " 
                                             }}
                                     />
@@ -62,7 +62,7 @@ const InfoSection = () => {
                                     <TranslatableText
                                             dictionary={{ 
                                                 english: "applications", 
-                                                russian: "заявок", 
+                                                russian: "заявки", 
                                                 kazakh: "қатысу өтінімдері" 
                                             }}
                                     /> 
@@ -72,7 +72,7 @@ const InfoSection = () => {
                                     <TranslatableText
                                             dictionary={{ 
                                                 english: "participants", 
-                                                russian: "участников", 
+                                                russian: "участниц", 
                                                 kazakh: "қатысушы" 
                                             }}
                                     /> 
