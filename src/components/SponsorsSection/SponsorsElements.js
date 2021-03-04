@@ -25,7 +25,7 @@ export const InfoRow = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-items: center;
+    justify-items: stretch;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
 
     @media screen and (max-width: 768px) {
@@ -121,10 +121,10 @@ export const ImgWrap2 = styled.div`
 export const ImgWrap3 = styled.div`
     max-width: 555px;
     height: 100%;
-    padding-left: 50px;
+    padding-left: 60px;
 
     @media screen and (max-width: 411px) {
-        padding-left: 40px;
+        padding-left: 50px;
         padding-right: 10px;
     }
 `;
@@ -132,8 +132,8 @@ export const ImgWrap3 = styled.div`
 export const ImgWrap4 = styled.div`
     max-width: 555px;
     height: 100%;
-    padding-top: 20px;
-    padding-left: 60px;
+    padding-top: 10px;
+    padding-left: 70px;
 
     @media screen and (max-width: 411px) {
         padding-left: 50px;
@@ -151,9 +151,6 @@ export const ImgPalantir = styled.img`
     width: 80%;
     margin: 0 0 10px 0;
     padding-bottom: 30px;
-
-    @media screen and (max-width: 768px) {
-    }
 `;
 
 export const ImgEpam = styled.img`
