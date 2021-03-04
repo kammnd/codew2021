@@ -18,7 +18,7 @@ export const InfoWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: center;
+    justify-content: stretch;
 `;
 
 export const InfoRow = styled.div`
@@ -56,7 +56,7 @@ export const Column2 = styled.div`
     padding: 0 25px;
     grid-area: col2;
     display: grid;
-    grid-template-rows: 220px 170px 220px; //minmax(1rf, auto, auto);
+    grid-template-rows: 232px 150px 220px; //minmax(1rf, auto, auto);
     row-gap: 0px;
 
     @media screen and (max-width: 768px) {
@@ -113,8 +113,9 @@ export const ImgWrap2 = styled.div`
     max-width: 555px;
     height: 100%;
     padding-left: 20px;
-    @media screen and (max-width: 411px) {
-        padding-left: 10px;
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        margin-left: -30px;
     }
 `;
 
@@ -123,9 +124,8 @@ export const ImgWrap3 = styled.div`
     height: 100%;
     padding-left: 60px;
 
-    @media screen and (max-width: 411px) {
-        padding-left: 50px;
-        padding-right: 10px;
+    @media screen and (max-width: 768px) {
+        padding-left: 0;
     }
 `;
 
@@ -135,9 +135,8 @@ export const ImgWrap4 = styled.div`
     padding-top: 10px;
     padding-left: 70px;
 
-    @media screen and (max-width: 411px) {
-        padding-left: 50px;
-        padding-right: 10px;
+    @media screen and (max-width: 768px) {
+        padding: 0;
     }
 `;
 
@@ -166,8 +165,8 @@ export const ImgChoco = styled.img`
 export const ImgBird = styled.img`
     width: 40%;
     padding-bottom: 30px;
-    margin-left: -230px;
-    margin-top: -25px;
+    margin-left: -220px;
+    margin-top: -20px;
 
     @media screen and (max-width: 768px) {
         display: none;
