@@ -52,7 +52,7 @@ const TeamSection = () => {
                                         dictionary={{ 
                                             english: "NU ACM-W SC is the first Kazakhstani branch of the largest international organization which aims to provide social and professional support for women in computer technology, computer science, and engineering, as well as to facilitate their technical growth by organizing different activities.", 
                                             russian: "NU ACM-W SC - это первая Казахстанская ветвь самой большой интернациональной организации, которая нацелена на оказание социальной и профессиональной поддержки женщинам в области компьютерных технологий, информатики и инженерии, а также содействие их техническому росту путем организации различных видов деятельности.", 
-                                            kazakh: "NU ACM-W SC - бұл алғашқы Қазақстандық бұтағы ең үлкен интернационалдық ұйым, компьютерлік технологиялар, информатика және инженерия саласында әйелдерге әлеуметтік және кәсіби қолдау көрсетуге, сондай-ақ, әртүрлі қызмет түрлерін ұйымдастыру жолымен олардың техникалық дамуына жәрдемдесуге бағытталған."}}
+                                            kazakh: "NU ACM-W SC компьютерлік технологиялар, информатика және инженерия саласында әйелдерге әлеуметтік және кәсіби қолдау көрсетуге, сондай-ақ, әртүрлі қызмет түрлерін ұйымдастыру жолымен олардың техникалық дамуына жәрдемдесуге бағытталған ұйым."}}
                                     /> 
                                 </Subtitle>
                                 <Subtitle darkText={true}>

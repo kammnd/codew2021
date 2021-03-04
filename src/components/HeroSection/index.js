@@ -44,7 +44,7 @@ import TranslatableText from '../../context/TranslatableText';
                     duration={500} 
                     spy={true} 
                     exact="true" 
-                    //offset={-80}
+                    offset={-80}
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover} 
                     primary='true' 

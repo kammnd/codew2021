@@ -140,6 +140,9 @@ export const Col1 = styled.div`
 
 export const Col2 = styled.div`
     margin-bottom: 5px;
-    margin-left: 150px;
+    margin-left: 270px;
     grid-area: col2;
+    @media screen and (max-width: 860px) {
+        margin-left: 150px;
+    }
 `;

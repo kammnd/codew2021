@@ -77,7 +77,7 @@ const RegistrationSection = () => {
                                         dictionary={{ 
                                             english: " you will receive the link to the HackerRank test, the results of which will determine you to one of the tracks - Novice/Experienced/Advanced. You will have one week to solve the contest.", 
                                             russian: " вы получите ссылку на HackerRank тест, по результатам которого вы будете распределены на один из уровней - Новичок / Средний / Продвинутый. На решение данного теста у вас будет одна неделя.", 
-                                            kazakh: " тіркелген поштаңызға НackerRank платформасындағы тестке сілтеме аласыз. Тест нәтижесі бойынша сіздің деңгейіңіз анықталады - бастауыш, орта және ілгерінді. Тестті орындауға 1 апта уақыт беріледі."
+                                            kazakh: " тіркелген поштаңызға НackerRank платформасындағы тестке сілтеме аласыз. Тест нәтижесі бойынша сіздің деңгейіңіз анықталады - бастауыш, орта не ілгерінді. Тестті орындауға 1 апта уақыт беріледі."
                                         }}
                                     />
                                 </List>
@@ -142,12 +142,12 @@ const RegistrationSection = () => {
                                 <List darkText={true}>
                                     - 
                                     <TranslatableText
-                                        dictionary={{ english: " are highly motivated to meet a community of wonderful talented women!", russian: " мотивированы развиваться и готовы встретиться с сообществом талантливых девушек!", kazakh: "Ғажап, әрі дарынды қыз/әйел қауымымен танысуға аса қызығатын"}}
+                                        dictionary={{ english: " are highly motivated to meet a community of wonderful talented women!", russian: " мотивированы развиваться и готовы встретиться с сообществом талантливых девушек!", kazakh: " Ғажап, әрі дарынды қыз/әйел қауымымен танысуға аса қызығатын"}}
                                     />
                                 </List>
                                 <Subtitle darkText={true} style={{marginBottom: '10px'}}>
                                     <TranslatableText
-                                        dictionary={{ english: "", russian: "", kazakh: "қыздарды қатысуға шақырады."}}
+                                        dictionary={{ english: "", russian: "", kazakh: "дарынды қыздар қауымымен танысуға дайын."}}
                                     />
                                 </Subtitle>
                             </TextWrapper>

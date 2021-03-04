@@ -165,7 +165,7 @@ export const ImgChoco = styled.img`
 export const ImgBird = styled.img`
     width: 40%;
     padding-bottom: 30px;
-    margin-left: -220px;
+    margin-left: -190px;
     margin-top: -20px;
 
     @media screen and (max-width: 768px) {

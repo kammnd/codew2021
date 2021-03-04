@@ -41,6 +41,7 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px 0 25px;
     grid-area: col1;
+    padding-top: 50px;
 
     @media screen and (max-width: 768px) {
         margin-bottom: 0px;
@@ -49,8 +50,10 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 34px 25px 0;
+    padding: 0px 25px 0;
     grid-area: col2;
+    padding-top: 80px;
+    
 
     @media screen and (max-width: 768px) {
        margin-top: 0;
@@ -89,7 +92,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.1;
     font-weight: 600;
     color: ${({ lightText }) => ( lightText ? '#f7f8f8' : '#010606')};
@@ -109,9 +112,12 @@ export const Subtitle = styled.p`
     max-width: 440px;
     margin-top: 25px;
     margin-bottom: 35px;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ?  '#010606' : '#f9f9f9')};
+    opacity: 90%;
+    text-align: justify;
+    text-justify: inter-word;
 
     @media screen and (max-width: 960px) {
         font-size: 13px;

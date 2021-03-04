@@ -46,7 +46,7 @@ const ScheduleSection = () => {
                                     </span>-
                                     <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 
                                         <TranslatableText
-                                            dictionary={{ english: " March 21 ", russian: " 21 ", kazakh: " 21 "}}
+                                            dictionary={{ english: " March 21 ", russian: " Март 21 ", kazakh: " 21 "}}
                                         />
                                     </span>
                                     <TranslatableText
@@ -64,7 +64,7 @@ const ScheduleSection = () => {
                                     </span>-
                                     <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 
                                         <TranslatableText
-                                            dictionary={{ english: " March 29 ", russian: " 29 ", kazakh: " 29 "}}
+                                            dictionary={{ english: " March 29 ", russian: " Март 29 ", kazakh: " 29 "}}
                                         />
                                     </span>
                                     <TranslatableText
