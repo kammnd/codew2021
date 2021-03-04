@@ -33,7 +33,7 @@ const Footer= () => {
                             <SocialIconLink href="https://www.instagram.com/acmsc_nu/?hl=en" target="_blank" aria-label="Instagram">
                                 <FaInstagram/>
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Email">
+                            <SocialIconLink href="https://mail.google.com/mail/?view=cm&fs=1&to=acmsc@nu.edu.kz&su=SUBJECT&body=BODY" target="_blank" aria-label="Email">
                                 <FaEnvelope/>
                             </SocialIconLink>
                         </SocialIcons>

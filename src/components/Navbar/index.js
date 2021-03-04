@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { FaBars, FaGlobeAfrica } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import {animateScroll as scroll} from 'react-scroll';
 import {
     Nav, 
@@ -11,14 +11,11 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink,
-    NavIcon,
     Select,
-    Span
 } from './NavbarElements';
 
 import LanguageConsumer from '../../context/LanguageConsumer';
 import TranslatableText from '../../context/TranslatableText';
-import { animateScroll } from 'react-scroll';
 
 const Navbar = ({ toggle } ) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -52,7 +49,7 @@ const Navbar = ({ toggle } ) => {
                             spy={true} exact='true' offset={-80}
                         >
                             <TranslatableText
-                                dictionary={{ english: "About", russian: "О нас", kazakh: "Марафон туралы" }}
+                                dictionary={{ english: "About", russian: "Описание", kazakh: "Марафон туралы" }}
                             />
                         </NavLinks>
                     </NavItem>
@@ -93,7 +90,7 @@ const Navbar = ({ toggle } ) => {
                         <NavLinks to="ourteam" smooth={true} duration={500}
                             spy={true} exact='true' offset={-80}>
                             <TranslatableText
-                                dictionary={{ english: "Our Team", russian: "Наша Команда", kazakh: "Біздің Топ" }}
+                                dictionary={{ english: "Our Team", russian: "О Нас", kazakh: "Бiз туралы" }}
                             />
                         </NavLinks>
                     </NavItem>
@@ -111,7 +108,7 @@ const Navbar = ({ toggle } ) => {
                 <NavBtnLink to={{
                     pathname: "https://docs.google.com/forms/d/e/1FAIpQLScz0OGyTUsl4jcnd23tT6BrMBlNQchdbF5_4RjYJWP6o-Dddw/viewform" }} target="_blank"  >
                     <TranslatableText
-                                dictionary={{ english: "Register", russian: "Регистрируйся", kazakh: "Тiркел" }}
+                                dictionary={{ english: "Register", russian: "Регистрируйся", kazakh: "Тiркелу" }}
                     />
                 </NavBtnLink>
                     {/* <NavBtnLink onClick={(e) => { e.preventDefault(); window.location.href="/";}}>Register</NavBtnLink> */}

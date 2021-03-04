@@ -27,7 +27,7 @@ const InfoSection = () => {
                             <TextWrapper>
                                 <TopLine> 
                                     <TranslatableText
-                                        dictionary={{ english: "About", russian: "О нас", kazakh: "Марафон туралы"}}
+                                        dictionary={{ english: "About", russian: "Описание", kazakh: "Марафон туралы"}}
                                     />
                                 </TopLine>
                                 <Heading lightText={true}>

@@ -7,6 +7,9 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
+    @media screen and (max-width: 540px) {
+        padding-bottom: 200px;
+    }
 `;
 
 export const InfoWrapper = styled.div`
@@ -23,7 +26,8 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1rf);
+    //grid-auto-columns: minmax(auto, 1rf);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: stretch;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
@@ -107,7 +111,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 17px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ?  '#010606' : '#fff')};
+    color: ${({darkText}) => (darkText ?  '#010606' : '#f9f9f9')};
 
     @media screen and (max-width: 960px) {
         font-size: 13px;

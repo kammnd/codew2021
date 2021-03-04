@@ -44,18 +44,40 @@ const RegistrationSection = () => {
                                 <List darkText={true}>
                                     <TranslatableText
                                         dictionary={{ 
-                                            english: "1. Fill the application form by 11:59 PM March 21, 2021.", 
-                                            russian: "1. Заполните форму заявки до 23:59, 21 марта 2021 года.", 
-                                            kazakh: "1. Өтінім беру формасын 2021 жылдың 21-ші наурызы, кешкі сағат 11:59-ға дейін толтырыңыз."
+                                            english: "1. Fill the application form by ", 
+                                            russian: "1. Заполните форму заявки до ", 
+                                            kazakh: "1. Өтінім беру формасын "
                                         }}
                                     />
+                                    <span style={{color: "#FF6F60", fontFamily: 'Raleway', fontSize: "20px"}}>
+                                        <TranslatableText
+                                            dictionary={{ 
+                                                english: "11:59 PM March 21, 2021", 
+                                                russian: "23:59, 21 марта 2021 года", 
+                                                kazakh: "2021 жылдың 21-ші наурызы, кешкі сағат 11:59-ға дейін "}}
+                                        />
+                                    </span>
+                                    <TranslatableText
+                                            dictionary={{ english: ".", russian: ".", kazakh: "толтырыңыз."}}
+                                        />
                                 </List>
                                 <List darkText={true}>
                                     <TranslatableText
+                                            dictionary={{ english: "2. On ", russian: "2. ", kazakh: "2. "}}
+                                        />
+                                    <span style={{color: "#FF6F60", fontFamily: 'Raleway', fontSize: "20px"}}>
+                                        <TranslatableText
+                                            dictionary={{ 
+                                                english: "22nd of March", 
+                                                russian: "22 марта", 
+                                                kazakh: "Наурыздың 22-сі"}}
+                                        />
+                                    </span>
+                                    <TranslatableText
                                         dictionary={{ 
-                                            english: "2. On 22nd of March you will receive the link to the HackerRank test, the results of which will determine you to one of the tracks - Novice/Experienced/Advanced. You will have one week to solve the contest.", 
-                                            russian: "2. 22 марта вы получите ссылку на HackerRank тест, по результатам которого вы будете распределены на один из уровней - Новичок / Средний / Продвинутый. На решение данного теста у вас будет одна неделя.", 
-                                            kazakh: "2. Наурыздың 22-сі тіркелген поштаңызға НackerRank платформасындағы тестке сілтеме аласыз. Тест нәтижесі бойынша сіздің деңгейіңіз анықталады - бастауыш, орта және ілгерінді. Тестті орындауға 1 апта уақыт беріледі."
+                                            english: " you will receive the link to the HackerRank test, the results of which will determine you to one of the tracks - Novice/Experienced/Advanced. You will have one week to solve the contest.", 
+                                            russian: " вы получите ссылку на HackerRank тест, по результатам которого вы будете распределены на один из уровней - Новичок / Средний / Продвинутый. На решение данного теста у вас будет одна неделя.", 
+                                            kazakh: " тіркелген поштаңызға НackerRank платформасындағы тестке сілтеме аласыз. Тест нәтижесі бойынша сіздің деңгейіңіз анықталады - бастауыш, орта және ілгерінді. Тестті орындауға 1 апта уақыт беріледі."
                                         }}
                                     />
                                 </List>
@@ -70,26 +92,28 @@ const RegistrationSection = () => {
                                 </Subtitle>
                                 <Subtitle darkText={true}>
                                     <TranslatableText
+                                            dictionary={{ 
+                                                english: "The results of the HackerRank will be sent to your email on", 
+                                                russian: "Результаты теста на определение уровня будут отправлены на вашу электронную почту", 
+                                                kazakh: "HackerRank платформасындағы тест нәтижелері"}}
+                                        />
+                                    <span style={{color: "#FF6F60", fontFamily: 'Raleway', fontSize: "20px" }}>
+                                        <TranslatableText
+                                            dictionary={{ 
+                                                english: " 3rd of April", 
+                                                russian: " 3 апреля", 
+                                                kazakh: " сәуірдің 3-і "}}
+                                        />
+                                    </span>
+                                    <TranslatableText
                                         dictionary={{ 
-                                            english: "The results of the HackerRank will be sent to your email on 3rd of April.", 
-                                            russian: "Результаты теста на определение уровня будут отправлены на вашу электронную почту 3 апреля.", 
-                                            kazakh: "HackerRank платформасындағы тест нәтижелері сәуірдің 3-і күні сіздің электронды поштаңызға жіберіледі."
+                                            english: ".", 
+                                            russian: ".", 
+                                            kazakh: "күні сіздің электронды поштаңызға жіберіледі."
                                         }}
                                     />
                                     
                                 </Subtitle>
-                                {/* <BtnWrap>
-                                    <Button to='home' 
-                                    smooth={true} 
-                                    duration={500} 
-                                    spy={true} 
-                                    exact="true" 
-                                    offset={-80}
-                                    primary={0}
-                                    dark ={0}
-                                    dark2 = {0}
-                                    >I'M READY!</Button>
-                                </BtnWrap> */}
                             </TextWrapper>
                         </Column1>
                         <Column2>
