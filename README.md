@@ -3,15 +3,13 @@
   <img alt="Logo" src="./src/images/codeW-bird.png" width="250" />
 </div>
 
-
-
 <p align="center"> 
-  Annual Coding Marathon for Females. Nazarabayev University ACM Women Student Chapter.
+  www.codew2021.kz
 </p>
 
-<p align="center">
-  This repository is a source of React website created with styled-components and React smooth scroll.
-</p>
+## Description
+👩🏻‍💻 Web page for Annual Coding Marathon for Females hold by Nazarabayev University ACM Women Student Chapter  🇰🇿.
+This repository is a source of React website created with styled-components and React smooth scroll.
 
 ## Installation
 1. Clone the project
