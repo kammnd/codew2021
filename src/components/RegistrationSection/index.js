@@ -142,12 +142,12 @@ const RegistrationSection = () => {
                                 <List darkText={true}>
                                     - 
                                     <TranslatableText
-                                        dictionary={{ english: " are highly motivated to meet a community of wonderful talented women!", russian: " мотивированы развиваться и готовы встретиться с сообществом талантливых девушек!", kazakh: " дарынды кыздар кауымымен танысуга дайын"}}
+                                        dictionary={{ english: " are highly motivated to meet a community of wonderful talented women!", russian: " мотивированы развиваться и готовы встретиться с сообществом талантливых девушек!", kazakh: " дарынды қыздар қауымымен танысуға дайын"}}
                                     />
                                 </List>
                                 <Subtitle darkText={true} style={{marginBottom: '10px'}}>
                                     <TranslatableText
-                                        dictionary={{ english: "", russian: "", kazakh: " кыздарды катысуга шакырады."}}
+                                        dictionary={{ english: "", russian: "", kazakh: " қыздарды қатысуға шақырады."}}
                                     />
                                 </Subtitle>
                             </TextWrapper>
