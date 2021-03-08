@@ -39,7 +39,8 @@ import TranslatableText from '../../context/TranslatableText';
                     />
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button type="button" to='registration' 
+                    <Button type="button" to={{
+                    pathname: "https://docs.google.com/forms/d/e/1FAIpQLScz0OGyTUsl4jcnd23tT6BrMBlNQchdbF5_4RjYJWP6o-Dddw/viewform" }} target="_blank"
                     smooth={true} 
                     duration={500} 
                     spy={true} 
