@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 100px 0 120px;
     }
 `;
 
@@ -88,7 +88,7 @@ export const Img = styled.img`
     padding-left: 80px;
     @media screen and (max-width: 768px) {
         padding-left: 50px;
-        width: 65%;
+        width: 55%;
     }
 `;
 
@@ -106,5 +106,19 @@ export const List = styled.p`
     @media screen and (max-width: 768px) {
         font-size: 18px;
     }
+`;
+
+export const Table = styled.table`
+    display: table;
+`;
+
+export const TableRow = styled.tr`
+    padding: 0.5rem ;
+    display: table-row;
+`;
+
+export const TableItem = styled.td`
+    padding: 0.5rem 0.5rem;
+    display: table-cell;
 `;
 

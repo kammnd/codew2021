@@ -12,6 +12,9 @@ import {
     Img,
     RowWrapper, 
     List,
+    Table,
+    TableRow,
+    TableItem
 } from './ScheduleElements'
 import TranslatableText from '../../context/TranslatableText';
 
@@ -34,7 +37,7 @@ const ScheduleSection = () => {
                                         dictionary={{ english: "Date & Time", russian: "Дата и Время", kazakh: "Күні мен Уақыты"}}
                                     />
                                 </Heading>
-                                <RowWrapper>
+                                {/* <RowWrapper>
                                     <List darkText={false}>
                                     <TranslatableText
                                         dictionary={{ english: "Registration:", russian: "Регистрация:", kazakh: "Тіркелу:"}}
@@ -71,8 +74,18 @@ const ScheduleSection = () => {
                                             dictionary={{ english: "", russian: "", kazakh: "аралығы"}}
                                         />
                                     </List>
-                                </RowWrapper>
+                                </RowWrapper> */}
                                 <RowWrapper>
+                                    <List darkText={false}>
+                                        <TranslatableText
+                                            dictionary={{ english: "Qualification test results: ", russian: "Результаты теста на уровень: ", kazakh: "Деңгейді анықтау тесті : "}}
+                                        />
+                                        <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 
+                                            <TranslatableText
+                                                dictionary={{ english: "3rd of April", russian: "3 Апреля", kazakh: "Сәуірдің 3-і"}}
+                                            />
+                                        </span>
+                                    </List>
                                     <List darkText={false}>
                                         <TranslatableText
                                             dictionary={{ english: "Contest date: ", russian: "Дата соревнования: ", kazakh: "Жарыс күні: "}}
@@ -83,16 +96,77 @@ const ScheduleSection = () => {
                                             />
                                         </span>
                                     </List>
-                                    <List darkText={false}>
+                                </RowWrapper>
+                                <RowWrapper>
+                                    <Heading lightText={true}>
                                         <TranslatableText
-                                            dictionary={{ english: "Contest time: ", russian: "Время соревнования: ", kazakh: "Жарыс уақыты: "}}
+                                            dictionary={{ english: "Contest time schedule: ", russian: "Время соревнования: ", kazakh: "Жарыс уақыты: "}}
                                         />
-                                        <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 
-                                        <TranslatableText
-                                                dictionary={{ english: "TBA", russian: "Будет объявлено позже", kazakh: "Жақында жарияланатын болады"}}
-                                            />
+                                        <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}>
                                         </span>
-                                    </List>
+                                    </Heading>
+                                    <Table>
+                                        <TableRow>
+                                            <TableItem style={{ paddingLeft: 0, width: '40%'}}>
+                                                <List darkText={false}>
+                                                        <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}>11:00 </span>-
+                                                        <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 12:00 </span>
+                                                </List>
+                                            </TableItem>
+                                            <TableItem>
+                                                <List>
+                                                    <TranslatableText
+                                                        dictionary={{ english: "Opening Ceremony", russian: "Церемония открытия", kazakh: "    Ашылу салтанаты" }}
+                                                    />
+                                                </List>
+                                            </TableItem>
+                                        </TableRow>
+                                        <TableRow>
+                                            <TableItem style={{ paddingLeft: 0}}>
+                                                <List darkText={false}>
+                                                    <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}>13:00 </span>-
+                                                    <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 16:00 </span>
+                                                </List>
+                                            </TableItem>
+                                            <TableItem>
+                                                <List>
+                                                <TranslatableText
+                                                        dictionary={{ english: "Main contest", russian: "Основной контест", kazakh: "Негізгі контест" }}
+                                                    />
+                                                </List>
+                                            </TableItem>
+                                        </TableRow>
+                                        <TableRow>
+                                            <TableItem style={{ paddingLeft: 0}}>
+                                            <List darkText={false}>
+                                                <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}>17:00 </span>-
+                                                <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 18:30 </span>
+                                            </List>
+                                            </TableItem>
+                                            <TableItem>
+                                                <List>
+                                                <TranslatableText
+                                                dictionary={{ english: "Networking", russian: "Нетворкинг", kazakh: "Нетворкинг"}}
+                                                />
+                                                </List>
+                                            </TableItem>
+                                        </TableRow>
+                                        <TableRow>
+                                            <TableItem style={{ paddingLeft: 0}}>
+                                            <List darkText={false}>
+                                                <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}>19:00 </span>-
+                                                <span style={{ color: "#FF6F60", fontFamily: 'Raleway', fontSize: 24 }}> 20:00 </span>
+                                            </List>
+                                            </TableItem>
+                                            <TableItem>
+                                                <List>
+                                                    <TranslatableText
+                                                        dictionary={{ english: "Closing ceremony and announcement of the results", russian: "Церемония закрытия и оглашение результатов", kazakh: "Жабылу салтанаты және нәтижелерді жариялау" }}
+                                                    />
+                                                </List>
+                                            </TableItem>
+                                        </TableRow>
+                                    </Table>    
                                 </RowWrapper>
                             </TextWrapper>
                         </Column1>
